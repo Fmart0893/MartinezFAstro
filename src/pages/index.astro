@@ -1,168 +1,60 @@
+---
+import "../styles/global.css";
+
+import PageHeader from "../components/PageHeader.astro";
+
+
+import Features from "../components/Features.astro";
+
+
+import PageContent from "../components/PageContent.astro";
+
+
+import Semesters from "../components/Semesters.astro";
+
+
+import PageFooter from "../components/PageFooter.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme Build For Astro</title>
-</head>
-<body>
-    <!-- 
-        pageheader
-        showcase
-        features
-        pagecontent
-        semesters
-        pagefooters
-    -->
+	</head>
+	<body>
+	<PageHeader/>  
+				
 
-    <!-- begin pageheader -->
-    <header id="pageheader">
-        pageheader
-    </header>
-    <!-- end pageheader -->
+				<!-- Begin Showcase -->
+				<section id="showcase">
+					<div id="showcasetext">
+						<h1>Fabian Martinez</h1>
+						<h2>Portfolio</h2>
+						<blockquote>"It alwatys seems impossible until it is done" - Nelson Mandela</blockquote>
+					</div>
 
-    <!-- begin showcase -->
-    <section id="showcase">
-        showcase
-    </section>
-    <!-- end showcase -->
+					<div id="showcaseimage">
+						<img src="images/technologiesbig.png" alt="Technologies" id="logosbig">
+						<img src="images/technologiessmall.png" alt="Technologies" id="logossmall">
+					</div>
 
-    <!-- begin features -->
-    <section id="features">
-        features
-    </section>
-    <!-- end features -->
+					<p id="showcaseintro"> This is a showcasde of my web design/development work.</p>
+				</section>
+				<!-- End Showcase -->
 
-    <!-- start pagecontent0 -->
-    <section id="pagecontent">
-        page content
-    </section>
-    <!-- end pagecontent -->
 
-    <!-- start semester -->
-    <section id="semester">
-        semesters
-    </section>
-    <!-- end semester -->
+	<Features/>
 
-    <!-- start pagefooter -->
-    <section id="pagefooter">
-        pagefooter
-    </section>
-    <!-- end pagefooter -->
+
+	<PageContent/>
+
+
+	<Semesters/>
+
+
+	<PageFooter></PageFooter>
+
 </body>
 </html>
-<style>
-	:root
-	{
-		--color-primary:red;
-		--color-secondary:blue:
-	}
-	html
-	{
-		font-size:62.5%;
-		/* Allows you to use rems instead of pixles for sizing
-		.5rem = 5px
-		1rem = 10px
-		1.6rem = 16px
-		2rem = 20px
-		6rem = 60px
-		 */
-	}
-	/* browser reset */
-	*, *::before, *::after
-	{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
-	/* easy pixle calculations with rem units */
-	body
-	{
-		font-size: 1.6rem;
-	}
-	/* Fix browser bounce on mac */
-	body
-	{
-		overflow: auto;
-		width: 100%;
-		overscroll-behavior: none;
-	}
-	body
-	{
-		font-size: 1.6rem;
-	}
-	/* Media Queries */
-	@media only screen and (min-width:320px)
-	{
-		body
-		{
-			background-color: magenta;
-		};
-	}
-	@media only screen and (min-width:480px)
-	{
-		body
-		{
-			background-color: yellow;
-		};
-	}
-	@media only screen and (min-width:768px)
-	{
-		body
-		{
-			background-color: lime;
-		};
-	}
-	@media only screen and (min-width:1024px)
-	{
-		body
-		{
-			background-color: coral;
-		};
-	}
-	@media only screen and (min-width:1200px)
-	{
-		body
-		{
-			background-color: steelblue;
-		};
-	}
-	#pageheader
-	{
-		padding: 1rem;
-		min-height: 200px;
-		background-color: coral;
-	}
-	#showcase
-	{
-		padding: 1rem;
-		min-height: 200px;
-		background-color: lightblue;
-	}
-	#features
-	{
-		padding: 1rem;
-		min-height: 200px;
-		background-color: aqua;
-	}
-	#pagecontent
-	{
-		padding: 1rem;
-		min-height: 200px;
-		background-color: green;
-	}
-	#semester
-	{
-		padding: 1rem;
-		min-height: 200px;
-		background-color: aquamarine;
-	}
-	#pagefooter
-	{
-		padding: 1rem;
-		min-height: 200px;
-		background-color: cornflowerblue;
-	}
-	</style>
