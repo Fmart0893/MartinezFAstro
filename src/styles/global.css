@@ -151,7 +151,7 @@
     #showcase
     {
         border: 6px solid #1f150d;
-        background-image: url(images/backgroundone.gif);
+        background-image: url(/images/backgroundone.gif);
         background-position-y: -434px;
         padding: 3rem;
         background-repeat: no-repeat;
