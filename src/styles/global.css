@@ -33,6 +33,15 @@
     font-size: 1.6rem;
     }
 
+    blockquote::before
+    {
+        content: "“";
+    }
+    blockquote::after
+    {
+        content:"”";
+    }
+
     /* 
     pageheader
     showcase
@@ -152,7 +161,7 @@
     {
         border: 6px solid #1f150d;
         background-image: url(/images/backgroundone.gif);
-        background-position-y: -434px;
+        background-position-y: -429px;
         padding: 3rem;
         background-repeat: no-repeat;
         background-size: cover;
