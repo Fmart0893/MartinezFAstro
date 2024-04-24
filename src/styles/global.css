@@ -159,7 +159,7 @@
     {
         border: 6px solid #1f150d;
         background-image: url(/images/backgroundone.gif);
-        background-position-y: -429px;
+        background-position: center bottom;
         padding: 3rem;
         background-repeat: no-repeat;
         background-size: cover;
@@ -207,7 +207,7 @@
     /* Hide Big Logos/Technologies for mobile */
     #logosbig
     {
-        display: none;
+        width: 90rem;
     }
     #logossmal
     {
@@ -227,7 +227,7 @@
     #features
     {
     min-height: 200px;
-    background-color: #bd6a63;
+    background-color: #382617;
     padding: 1rem;
     }
     #features .container
@@ -297,9 +297,17 @@
     }
     /* end semesters section styles */
 
+
+
+
+
+
+
+
+
     /* Semesters Thummbnail Sections */
     .thumbnail
-    {
+    { 
         background-color: #273e3d;
         border-radius: 10px;
         display: flex;
@@ -314,7 +322,7 @@
         width: 150px;
         height: 150px;
     }
-    .thumb:hover
+    .thumb:hover 
     {
         animation-name: tilt;
         animation-duration: 1s;
@@ -346,7 +354,18 @@
     {
         transform: scale(1);
     }
-    /* End of Semesters Thumbnail Sections */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -398,10 +417,6 @@
     /* Media Queries */
     @media only screen and (min-width: 320px)
     {
-    #features
-    {
-        background-color: #bd6a63;
-    }
     /* Header Styles */
     h1, h2
     {
@@ -423,10 +438,6 @@
 
     @media only screen and (min-width: 480px)
     {
-    #features
-    {
-        background-color: #bd6a63;
-    }
     /* Header Styles */
     h1, h2
     {
@@ -442,16 +453,16 @@
     {
         line-height: 2;
     }
+    #logosbig
+    {
+        display: none;
+    }
     }
 
 
 
     @media only screen and (min-width: 768px)
     {
-    #features 
-    {
-        background-color: #bd6a63;
-    }
     .card
     {
         flex-basis: 30%;
@@ -479,6 +490,10 @@
     {
         line-height: 2;
     }
+    #logosbig
+    {
+    display: none;
+    }
     }
 
 
@@ -486,16 +501,12 @@
 
     @media only screen and (min-width: 1024px)
     {
-    #features
-    {
-        background-color: #bd6a63;
-    }
-    /* #logosbig
+    #logosbig
     {
         display: block;
         margin: auto;
-    } */
-    #logossmal
+    }
+    #logossmall
     {
         display: none;
     }
@@ -543,5 +554,10 @@
     li
     {
         line-height: 2;
+    }
+    #logosbig
+    {
+        display: block;
+        margin: auto;
     }
     }
