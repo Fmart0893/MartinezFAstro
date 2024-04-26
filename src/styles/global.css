@@ -322,6 +322,11 @@
         width: 150px;
         height: 150px;
     }
+    .thumbnail a
+    {
+        background-color: none;
+        position: relative;
+    }
     .thumb:hover 
     {
         animation-name: tilt;
