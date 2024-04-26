@@ -19,3 +19,61 @@
 		<!-- End Container -->
 	</footer>
 	<!-- End Pagefooter -->
+	<style>    
+    #pagefooter
+    {
+        background-color: #283E3D ;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+        padding-top: 6rem;
+    }
+    #pagefooter .container
+    {
+        background-color: rgb(141, 141, 141);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #pagefooter a
+    {
+        color: #fff;
+    }
+    #pagefooter a:hover
+    {
+        color: #b7c1bf;
+    }
+    #pagefooter h3
+    {
+        padding-bottom: 3rem;
+    }
+    #pagefooter #quote
+    {
+        text-align: left;
+    }
+    #pagefooterlinks
+    {
+        display: none;
+    }
+    blockquote::before
+    {
+        font-size: 20px;
+        background-color: none;
+        content: "“";
+    }
+    blockquote::after
+    {
+        font-size: 20px;
+        background-color: none;
+        content: "”";
+    }
+
+    @media only screen and (min-width: 1200px)
+    {
+    #pagefooterlinks
+    {
+        display:block;
+    }
+    }
+    </style>

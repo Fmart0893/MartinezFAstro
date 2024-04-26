@@ -5,12 +5,12 @@
 
 			<section id="workthumbnails">
 				<div class="thumbnail">
-<a href="https://chsserver01.org/2023/fmartinez062023/Demos/PaintBrush1/paintbrush2.html" data-tooltip="Canvas Paint Brush"   > <img class="thumb" src="images/PaintCode.png" alt="Paint Brush"></a>
-<a href="https://chsserver01.org/2023/fmartinez062023/Demos/Canvas/CanvasDrawing1.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/canvas.png" alt="Canvas"></a>
-<a href="https://chsserver01.org/2023/fmartinez062023/Demos/flexbox001/flexbox002.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AF001WAD.png" alt="AD001WAD"></a>
-<a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB002/afb002.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AFB001.png" alt="AFB001"></a>
-<a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB003/afb003.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AFB003.png" alt="AFB003"></a>
-<a href="https://chsserver01.org/2023/fmartinez062023/Activities/canvasinterface.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/CanvasInterface.png" alt="Canvas Interface"></a>
+					<a href="https://chsserver01.org/2023/fmartinez062023/Demos/PaintBrush1/paintbrush2.html" data-tooltip="Canvas Paint Brush"   > <img class="thumb" src="images/PaintCode.png" alt="Paint Brush"></a>
+					<a href="https://chsserver01.org/2023/fmartinez062023/Demos/Canvas/CanvasDrawing1.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/canvas.png" alt="Canvas"></a>
+					<a href="https://chsserver01.org/2023/fmartinez062023/Demos/flexbox001/flexbox002.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AF001WAD.png" alt="AD001WAD"></a>
+					<a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB002/afb002.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AFB001.png" alt="AFB001"></a>
+					<a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB003/afb003.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AFB003.png" alt="AFB003"></a>
+					<a href="https://chsserver01.org/2023/fmartinez062023/Activities/canvasinterface.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/CanvasInterface.png" alt="Canvas Interface"></a>
 				</div>
 			</section>
 
@@ -33,3 +33,80 @@
 		<!-- End Container -->
 	</section>
 	<!-- End Semesters -->
+	<style>
+		#semesters
+		{
+			padding: 2rem 0 2rem 0;
+			color: white;
+			background-color:  #535353;
+			border: 4px solid rgb(48, 48, 48);
+		}
+		#semesters h2, #semesters h3
+		{
+			padding: 2rem 0 2rem 0;
+		}
+		#semesters h2
+		{
+			font-size: 4rem;
+		}
+		.assignments a 
+		{
+			color:#ffffff;
+		}
+
+		/* Semesters Thummbnail Sections */
+		.thumbnail
+		{ 
+			background-color: #273e3d;
+			border-radius: 10px;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+			align-content: center;
+			padding: 10px;
+		}
+		.thumb
+		{
+			width: 150px;
+			height: 150px;
+		}
+		.thumbnail a
+		{
+			background-color: none;
+			position: relative;
+		}
+		.thumb:hover 
+		{
+			animation-name: tilt;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes tilt 
+		{
+			0%{transform: rotate(0deg);}
+			100%{transform: rotate(-15deg);}
+		}
+	
+		.thumbnail a[data-tooltip]::after
+		{
+			background-color: rgb(0, 0, 0, 0.7);
+			color: white;
+			padding:.5rem;
+			content: attr(data-tooltip);
+			position: absolute;
+			z-index: 1;
+			top: -15%;
+			left: 10%;
+			right: 10%;
+			border-radius: 10px;
+			text-align: center;
+			transform: scale(0);
+			transition: all .5s;
+		}
+		.thumbnail a[data-tooltip]:hover::after
+		{
+			transform: scale(1);
+		}
+	/* end semesters section styles */
+	</style>

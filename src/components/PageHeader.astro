@@ -17,3 +17,55 @@
 		<!-- End Container -->
 	</header>
 	<!-- End Pageheader -->
+	<style>
+		#pageheader 
+		{
+			background-color: #082712;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0rem 30rem 0rem 45%;
+		}
+		#pageheader .container
+		{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 0 2rem 0 2rem;
+		}
+	
+		.logo img
+		{
+			height: 9rem;
+			border: 3px solid #1f150d;
+			border-radius: 50%;
+		}
+		.logo:hover
+		{
+			animation-name: swim;
+			animation-duration: .5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: linear;
+		}
+		@keyframes swim
+		{
+			0%{transform: rotate(-45deg);}
+			100%{transform: rotate(45deg);}
+		}
+		/* Header Menu */
+		#menu
+		{
+			display: flex;
+			justify-content: space-between;
+			width: 20rem;/* 200px*/
+			list-style-type: none;
+			background-color: none;
+		}
+		menu li a
+		{
+			color: #fff;
+		}
+		/* End of Header Section Styles */
+	</style>

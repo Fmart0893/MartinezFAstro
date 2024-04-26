@@ -20,3 +20,59 @@
 		<!-- End Container -->
 	</section>
 	<!-- End Features -->
+	<style>
+    #features
+    {
+    min-height: 200px;
+    background-color: #382617;
+    padding: 1rem;
+    }
+    #features .container
+    {
+        padding-top: 2rem;/* Separate from Showcase */
+        background-color: #1f150d;
+        display: flex;
+        gap:1rem;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .card
+    {
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0rem 0rem 1rem silver;
+        margin-bottom: 2rem;
+        border-radius: 2.5rem;
+    }
+    /* End features section styles */
+	  /* Media Queries */
+	@media only screen and (min-width: 320px)
+    {
+        
+    }
+
+
+
+    @media only screen and (min-width: 480px)
+    {
+        
+    }
+
+
+
+    @media only screen and (min-width: 768px)
+    {
+        .card
+        {
+            flex-basis: 30%;
+        }
+        #features .container
+        {
+            flex-direction: row;
+        }
+        h1, h2
+        {
+            text-align: left;
+        }
+    }
+	</style>

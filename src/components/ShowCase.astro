@@ -1,0 +1,102 @@
+	<!-- Begin Showcase -->
+	<section id="showcase">
+		<div id="showcasetext">
+			<h1>Fabian Martinez</h1>
+			<h2>Portfolio</h2>
+			<blockquote>It always seems impossible until it is done</blockquote> - Nelson Mandela
+		</div>
+
+		<div id="showcaseimage">
+			<img src="images/technologiesbig.png" alt="Technologies" id="logosbig">
+			<img src="images/technologiessmall.png" alt="Technologies" id="logossmall">
+		</div>
+
+			<p id="showcaseintro"> This is a showcasde of my web design/development work.</p>
+		</section>
+		<!-- End Showcase -->
+		<style>
+
+    /* Header Section Styles */   
+    #showcase
+    {
+        border: 6px solid #1f150d;
+        background-image: url(/images/backgroundone.gif);
+        background-position: center bottom;
+        padding: 3rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #showcasetext
+    {
+        border: 2px solid none;
+        color: #fff;
+        text-align: center;
+        margin: 5rem auto;
+        max-width: 60rem;
+    }
+    #showcase h1
+    {
+        font-size: 5rem;/* 50px */
+        margin-bottom: 2rem;/* 20px */
+        text-shadow:0 0 1rem black;
+    }
+    #showcase blockquote
+    {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    #showcaseimage
+    {
+        text-align: center;
+        /* cheating */
+    }
+    #showcaseimage img
+    {
+        border-radius: 1rem;
+        margin: auto; /*Needed?*/
+    }
+    #showcaseintro
+    {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 3rem;
+        opacity: 0%;
+        height: 15rem;
+    }
+    blockquote::before
+    {
+        font-size: 20px;
+        background-color: none;
+        content: "“";
+    }
+    blockquote::after
+    {
+        font-size: 20px;
+        background-color:none;
+        content: "”";
+    }
+    /* Hide Big Logos/Technologies for mobile */
+    #logosbig
+    {
+        display: none;
+    }
+    #logossmall
+    {
+        width: 30rem;
+    }
+    /* End of showcase section styles */
+    @media only screen and (min-width: 1024px)
+    {
+            #logosbig
+        {
+            display: block;
+            margin: auto;
+        }
+        #logossmall
+        {
+            display: none;
+        }
+    }
+
+				</style>
