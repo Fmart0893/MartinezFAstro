@@ -1,3 +1,6 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+---
 	<!-- Begin Semesters -->
 	<section id="semesters">
 		<div class="container">
@@ -5,29 +8,29 @@
 
 			<section id="workthumbnails">
 				<div class="thumbnail">
-					<a href="https://chsserver01.org/2023/fmartinez062023/Demos/PaintBrush1/paintbrush2.html" data-tooltip="Canvas Paint Brush"   > <img class="thumb" src="images/PaintCode.png" alt="Paint Brush"></a>
-					<a href="https://chsserver01.org/2023/fmartinez062023/Demos/Canvas/CanvasDrawing1.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/canvas.png" alt="Canvas"></a>
-					<a href="https://chsserver01.org/2023/fmartinez062023/Demos/flexbox001/flexbox002.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AF001WAD.png" alt="AD001WAD"></a>
-					<a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB002/afb002.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AFB001.png" alt="AFB001"></a>
-					<a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB003/afb003.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/AFB003.png" alt="AFB003"></a>
-					<a href="https://chsserver01.org/2023/fmartinez062023/Activities/canvasinterface.html" data-tooltip="Canvas Paint Brush"    ><img class="thumb" src="images/CanvasInterface.png" alt="Canvas Interface"></a>
+					<a href={`${base}legacy/Demos/PaintBrush1/paintbrush2.html`} data-tooltip="Canvas Paint Brush"   > <img class="thumb" src={`${base}images/PaintCode.png`} alt="Paint Brush"></a>
+					<a href={`${base}legacy/Demos/Canvas/CanvasDrawing1.html`} data-tooltip="Canvas Paint Brush"    ><img class="thumb" src={`${base}images/canvas.png`} alt="Canvas"></a>
+					<a href={`${base}legacy/Demos/flexbox001/flexbox002.html`} data-tooltip="Canvas Paint Brush"    ><img class="thumb" src={`${base}images/AF001WAD.png`} alt="AD001WAD"></a>
+					<a href={`${base}legacy/Activities/AFB002/afb002.html`} data-tooltip="Canvas Paint Brush"    ><img class="thumb" src={`${base}images/AFB001.png`} alt="AFB001"></a>
+					<a href={`${base}legacy/Activities/AFB003/afb003.html`} data-tooltip="Canvas Paint Brush"    ><img class="thumb" src={`${base}images/AFB003.png`} alt="AFB003"></a>
+					<a href={`${base}legacy/Activities/canvasinterface.html`} data-tooltip="Canvas Paint Brush"    ><img class="thumb" src={`${base}images/CanvasInterface.png`} alt="Canvas Interface"></a>
 				</div>
 			</section>
 
 			<h3>Semester 1</h3>
 			<ul class="assignments">
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Demos/flexbox001/flexbox002.html" target="new">flexbox002</a></li>
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Demos/PaintBrush1/paintbrush1.html" target="new">Paintbrush1</a></li>
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Demos/PaintBrush1/paintbrush2.html" target="new">Paintbrush2</a></li>
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Activities/AFB003/afb003.html" target="new">AFB003</a></li>
+				<li><a href={`${base}legacy/Demos/flexbox001/flexbox002.html`} target="new">flexbox002</a></li>
+				<li><a href={`${base}legacy/Demos/PaintBrush1/paintbrush1.html`} target="new">Paintbrush1</a></li>
+				<li><a href={`${base}legacy/Demos/PaintBrush1/paintbrush2.html`} target="new">Paintbrush2</a></li>
+				<li><a href={`${base}legacy/Activities/AFB003/afb003.html`} target="new">AFB003</a></li>
 			</ul>
 
 			<h3>Semester 2</h3>
 			<ul class="assignments">
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Activities/canvasinterface.html" target="new">Canvas Interface</a></li>
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/" target="new">Index Page</a></li>
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Demos/ModernLayout/modernlayout.html" target="new">Modern Layouts</a></li>
-				<li><a href="https://chsserver01.org/2023/fmartinez062023/Demos/ArraysReview/arraysreview.html" target="new">Arrays Review</a></li>
+				<li><a href={`${base}legacy/Activities/canvasinterface.html`} target="new">Canvas Interface</a></li>
+				<li><a href={`${base}legacy/`} target="new">Index Page</a></li>
+				<li><a href={`${base}legacy/Demos/ModernLayout/modernlayout.html`} target="new">Modern Layouts</a></li>
+				<li><a href={`${base}legacy/Demos/ArraysReview/arraysreview.html`} target="new">Arrays Review</a></li>
 			</ul>
 		</div>
 		<!-- End Container -->

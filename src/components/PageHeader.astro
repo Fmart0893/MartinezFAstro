@@ -1,17 +1,20 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+---
 
 	<!-- Header Section -->
 	<header id="pageheader">
 
 			<div class="logo">
-				<img src="/images/owl.png" alt="owl">
+				<img src={`${base}images/owl.png`} alt="owl">
 			</div>
 
 			<nav>
 				<ul id="menu">
-					<li><a href="/">Home</a></li>
-					<li><a href="/career">About</a></li>
-					<li><a href="/markdownnotes/">Blog</a></li>
-					<li><a href="https://chsserver01.org/2023/fmartinez062023/">FTP Profile</a></li>
+					<li><a href={base}>Home</a></li>
+					<li><a href="#pagecontent">About</a></li>
+					<li><a href="#semesters">Projects</a></li>
+					<li><a href={`${base}legacy/`}>Original Portfolio</a></li>
 				</ul>
 			</nav>
 

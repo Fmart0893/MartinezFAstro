@@ -1,5 +1,8 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+---
 	<!-- Begin Showcase -->
-	<section id="showcase">
+	<section id="showcase" style={`--showcase-background: url(${base}images/backgroundone.gif)`}>
 		<div id="showcasetext">
 			<h1>Fabian Martinez</h1>
 			<h2>Portfolio</h2>
@@ -7,8 +10,8 @@
 		</div>
 
 		<div id="showcaseimage">
-			<img src="images/technologiesbig.png" alt="Technologies" id="logosbig">
-			<img src="images/technologiessmall.png" alt="Technologies" id="logossmall">
+			<img src={`${base}images/technologiesbig.png`} alt="Technologies" id="logosbig">
+			<img src={`${base}images/technologiessmall.png`} alt="Technologies" id="logossmall">
 		</div>
 
 			<p id="showcaseintro"> This is a showcasde of my web design/development work.</p>
@@ -20,7 +23,7 @@
     #showcase
     {
         border: 6px solid #1f150d;
-        background-image: url(/images/backgroundone.gif);
+        background-image: var(--showcase-background);
         background-position: center bottom;
         padding: 3rem;
         background-repeat: no-repeat;

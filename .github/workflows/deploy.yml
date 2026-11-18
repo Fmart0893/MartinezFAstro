@@ -1,4 +1,3 @@
-
 name: Deploy Astro Website
 
 on:
@@ -15,8 +14,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Astro portfolio
         uses: actions/checkout@v4
+
+      - name: Checkout original school projects
+        uses: actions/checkout@v4
+        with:
+          repository: Fmart0893/fmartinez062023
+          ref: main
+          path: legacy-source
+          persist-credentials: false
+
+      - name: Include archived projects in the published site
+        shell: bash
+        run: |
+          mkdir -p public/legacy
+          cp -R legacy-source/. public/legacy/
+          rm -rf public/legacy/.git
+          python3 - <<'PY'
+          from pathlib import Path
+          root = Path("public/legacy")
+          old = "https://chsserver01.org/2023/fmartinez062023/"
+          new = "/MartinezFAstro/legacy/"
+          for path in root.rglob("*"):
+              if not path.is_file() or path.suffix.lower() not in {".html", ".css", ".js"}:
+                  continue
+              text = path.read_text(encoding="utf-8", errors="replace")
+              if old in text:
+                  path.write_text(text.replace(old, new), encoding="utf-8")
+          PY
 
       - name: Build Astro website
         uses: withastro/action@v3

@@ -1,3 +1,6 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+---
 	<!-- Begin Pagefooter -->
 	<footer id="pagefooter">
 		<div class="container">
@@ -10,9 +13,9 @@
 			<div id="pagefooterlinks">
 				<h3>Links</h3>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="blog.html">Blog</a></li>
+						<li><a href={base}>Home</a></li>
+						<li><a href="#pagecontent">About</a></li>
+						<li><a href="#semesters">Projects</a></li>
 					</ul>
 			</div>
 		</div>
